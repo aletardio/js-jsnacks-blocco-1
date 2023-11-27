@@ -5,14 +5,19 @@ let second_arr = [11, 63, 3, 1];
 console.log(first_arr, second_arr);
 
 // AGGIUNGERE NUOVI ELEMENTI ALL'ARRAY CON MENO ELEMENTI FINO A QUANDO NE AVRÀ TANTI QUANTI L'ALTRO
-for(let i = 1; i<=2; i++) {
-    second_arr.push(parseInt(Math.random()*100)+ 2);
-    
-    if(second_arr < first_arr){
-
+if(first_arr.length < second_arr.length){
+    // AGGIUNTO ELEMENTI AL SECONDO ARRAY
+    for (let i=first_arr.length - second_arr.length; i<first_arr.length;i++){
+        let num = Math.floor(Math.random() * 100 + 1);
+        second_arr.push(num);
     }
 }
-console.log(first_arr, second_arr)
+else {
+    // AGGIUNTO ELEMENTI AL PRIMO ARRAY
+}
+
+console.log(first_arr);
+console.log(second_arr);
 
 
 

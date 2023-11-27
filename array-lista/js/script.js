@@ -2,8 +2,11 @@
 let fruits = ['banana', 'mela', 'pera', 'ciliegia', 'arancia', 
 'mandarino', 'cocomero', 'limone', 'fragola'];
 
+// DEFINIZIONE DELLA VARIABILE PESCA
+let peach = 'pesca';
+
 // AGGIUNGERE LA PESCA ALL'INTERNO DELL'ARRAY FRUITS
-fruits.push('pesca');
+fruits.push(peach);
 
 // DICHIARAZIONE DI UNA VARIABILE PER LA VALIDITÀ
 let isValid = false;
